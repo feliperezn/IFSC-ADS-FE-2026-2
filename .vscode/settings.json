@@ -1,0 +1,21 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.suggest.insertMode": "replace",
+    "editor.tabSize": 2
+  },
+  "emmet.includeLanguages": {
+    "javascript": "html",
+    "typescriptreact": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "html.autoClosingTags": true,
+  "html.format.wrapAttributes": "auto",
+  "html.format.indentInnerHtml": true,
+  "html.suggest.html5": true,
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "liveServer.settings.CustomBrowser": "chrome"
+}
