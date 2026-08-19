@@ -1,0 +1,7 @@
+form {
+  display: table;
+}
+
+form *{
+  display: table-row;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Livros</title>
+  </head>
+
+  <body>
+
+    <nav>
+      <ul>
+        <li><a href="/index.html">Perfil</a></li>
+        <li><a href="/livros.html">Livros</a></li>
+      </ul>
+    </nav>
+
+    <h1>Registrar um novo Livro</h1>
+
+    <form>
+      <label for="bookTitle">
+        Título do Livro
+        <input type="text" name="bookTitle" id="bookTitle">
+      </label>
+
+      <label for="bookAuthor">
+        Autor
+        <input type="text" name="bookAuthor" id="bookAuthor">
+      </label>
+
+      <label for="bookGender">
+        Gênero
+        <select name="bookAuthor" id="bookGender">
+          <option value="">--Selecione uma opção--</option>
+          <option value="fiction">Ficção</option>
+          <option value="drama">Drama</option>
+          <option value="bio">Biografia</option>
+        </select>
+      </label>
+
+      <label for="startDate">
+        Data de início
+        <input type="date" name="startDate" id="startDate">
+      </label>
+
+      <label for="endDate">
+        Data de Término
+        <input type="date" name="endDate" id="endDate">
+      </label>
+
+      <p>Avaliação ★</p>
+      <div style="display: inline;">
+        <label for="rating1">1</label>
+        <input type="radio" id="rating1" name="bookRating" value="1">
+
+        <label for="rating1">2</label>
+        <input type="radio" id="rating2" name="bookRating" value="2">
+
+        <label for="rating1">3</label>
+        <input type="radio" id="rating3" name="bookRating" value="3">
+
+        <label for="rating1">4</label>
+        <input type="radio" id="rating4" name="bookRating" value="4">
+
+        <label for="rating1">5</label>
+        <input type="radio" id="rating5" name="bookRating" value="5">
+      </div>
+
+      <label for="commentSection">
+        Comentários
+        <br>
+        <textarea name="commentSection" id="commentSection" rows="5" cols="33"
+          maxlength="140">Escreva aqui...</textarea>
+      </label>
+
+
+      <label for="submitForm">
+        <input id="submitForm" type="submit" value="Enviar">
+      </label>
+
+    </form>
+  </body>
+
+</html>
