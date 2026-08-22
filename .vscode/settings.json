@@ -17,5 +17,6 @@
   "html.suggest.html5": true,
   "editor.linkedEditing": true,
   "editor.bracketPairColorization.enabled": true,
-  "liveServer.settings.CustomBrowser": "chrome"
+  "liveServer.settings.CustomBrowser": "chrome",
+  "livePreview.defaultPreviewPath": "/index.html"
 }
