@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>feliperezn - Profile</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style> 
+
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Perfil</a></li>
+                <li><a href="/livros.html">Livros</a></li>
+            </ul>
+        </nav>
+
+        <div class="profile-container">
+            <img id="profile_bg" src="/img/assets/profile_bg.png" alt="Profile Frame">
+            <img id="profile_avatar" src="/img/assets/avatar.jpg" alt="Profile Picture">
+        </div>
+
+        <h1>Felipe</h1>
+        <p>São José, SC</p>
+
+        <table id="horarios">
+            <colgroup span="2" class="info"></colgroup>
+            <colgroup span="1" class="cidade"></colgroup>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>25</td>
+                <td>Florianópolis</td>
+            </tr>
+        </table>
+
+        <table class="jogos">
+            <tr>
+                <td>Jogos Favoritos</td>
+            </tr>
+            <tr>
+                <td><img src="/img/assets/GTAV.jpg" alt="GTA V"></td>
+                <td><img src="/img/assets/Hades.jpg" alt="Hades"></td>
+                <td><img src="/img/assets/Stray.jpg" alt="Stray"></td>
+                <td><img src="/img/assets/Spiritfarer.jpg" alt="Spiritfarer"></td>
+            </tr>
+        </table>
+
+        <table class="filmes">
+            <tr>
+                <td>Filmes favoritos</td>
+            </tr>
+            <tr>
+                <td><img class="poster" src="/img/assets/HP1.jpg" alt="HP1"></td>
+                <td><img class="poster" src="/img/assets/HP2.jpg" alt="HP2"></td>
+                <td><img class="poster" src="/img/assets/HP3.jpg" alt="HP3"></td>
+                <td><img class="poster" src="/img/assets/HP4.jpg" alt="HP4"></td>
+            </tr>
+        </table>
+
+        <table class="series">
+            <tr>
+                <td>Séries favoritas</td>
+            </tr>
+            <tr>
+                <td><img class="poster" src="/img/assets/BreakingBad.webp" alt="Breaking Bad"></td>
+                <td><img class="poster" src="/img/assets/TheOffice.webp" alt="Breaking Bad"></td>
+                <td><img class="poster" src="/img/assets/TheBear.webp" alt="Breaking Bad"></td>
+                <td><img class="poster" src="/img/assets/Wednesday.webp" alt="Breaking Bad"></td>
+            </tr>
+        </table>
+
+    </body>
+
+    <footer>
+    </footer>
+
+    <!-- https://www.steamgriddb.com/game/3674 -->
+
+</html>

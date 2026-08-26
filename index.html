@@ -19,34 +19,33 @@
             <ul>
                 <li><a href="/index.html">Perfil</a></li>
                 <li><a href="/livros.html">Livros</a></li>
+                <li><a href="/horarios.html">Horários</a></li>
             </ul>
         </nav>
 
-        <!-- NOVO: Container para agrupar as imagens -->
-        <div class="profile-container">
-            <img id="profile_bg" src="/img/assets/profile_bg.png" alt="Profile Frame">
-            <img id="profile_avatar" src="/img/assets/avatar.jpg" alt="Profile Picture">
+        <div id="profile-container">
+            <div class="profile-picture">
+                <img id="profile_bg" src="/img/assets/profile_bg.png" alt="Profile Frame">
+                <img id="profile_avatar" src="/img/assets/avatar.jpg" alt="Profile Picture">
+            </div>
+            <div>
+                <h2>Felipe Rezende</h2>
+                <p>São José, SC</p>
+            </div>
         </div>
 
-        <h1>Felipe</h1>
-        <p>São José, SC</p>
-
         <table class="jogos">
+            <th colspan="4">Jogos Favoritos</th>
             <tr>
-                <td>Jogos Favoritos</td>
-            </tr>
-            <tr>
-                <td><img src="/img/assets/GTAV.jpg" alt="GTA V"></td>
-                <td><img src="/img/assets/Hades.jpg" alt="Hades"></td>
-                <td><img src="/img/assets/Stray.jpg" alt="Stray"></td>
-                <td><img src="/img/assets/Spiritfarer.jpg" alt="Spiritfarer"></td>
+                <td><img class="poster" src="/img/assets/GTAV.jpg" alt="GTA V"></td>
+                <td><img class="poster" src="/img/assets/Hades.jpg" alt="Hades"></td>
+                <td><img class="poster" src="/img/assets/Stray.png" alt="Stray"></td>
+                <td><img class="poster" src="/img/assets/Spiritfarer.jpg" alt="Spiritfarer"></td>
             </tr>
         </table>
 
         <table class="filmes">
-            <tr>
-                <td>Filmes favoritos</td>
-            </tr>
+            <th colspan="4">Filmes Favoritos</th>
             <tr>
                 <td><img class="poster" src="/img/assets/HP1.jpg" alt="HP1"></td>
                 <td><img class="poster" src="/img/assets/HP2.jpg" alt="HP2"></td>
@@ -56,9 +55,7 @@
         </table>
 
         <table class="series">
-            <tr>
-                <td>Séries favoritas</td>
-            </tr>
+            <th colspan="4">Séries Favoritas</th>
             <tr>
                 <td><img class="poster" src="/img/assets/BreakingBad.webp" alt="Breaking Bad"></td>
                 <td><img class="poster" src="/img/assets/TheOffice.webp" alt="Breaking Bad"></td>
@@ -71,7 +68,5 @@
 
     <footer>
     </footer>
-
-    <!-- https://www.steamgriddb.com/game/3674 -->
 
 </html>
