@@ -138,8 +138,81 @@ function verificaNome(array) {
 verificaNome(arrayNomes)
 
 // Exercicio 9
-let arrayA = [1, 2, 3];
-let arrayB = [1, 2, 3];
+let arrayA = [1, 2, 3, 4, 5];
+let arrayB = [1, 2, 3, 4, 5];
 
 
+function comparar(array1, array2){
+    let ehIgual = true;
 
+    for (let i in array1){
+        if (array1[i] != array2[i]){
+            ehIgual = false;
+            console.log("Arrays diferentes!");
+            break;
+        }
+    }
+    if (ehIgual == true){
+        console.log("Arrays iguais!");
+    }
+}
+
+comparar(arrayA, arrayB);
+
+// Exercicio 10
+let array = [1,2,3,4];
+
+function removedor(array, index){
+    array.splice(index, 1);
+    console.log(array);
+}
+
+removedor(array, 3);
+
+// Exercicio 11
+let arrayPalindromo = [1,2,3,2,1];
+let newArrayPalindromo = [];
+let reverso = [];
+
+function ehPalindromo(array1, array2){
+    let ehIgual = true;
+
+    for (let i in array1){
+        if (array1[i] != array2[i]){
+            ehIgual = false;
+            console.log("Não é Palíndromo!");
+            break;
+        }
+    }
+    if (ehIgual == true){
+        console.log("É Palíndromo!");
+    }
+}
+
+if (Array.isArray(arrayPalindromo)){
+    reverso = arrayPalindromo.toReversed();
+    console.log(arrayPalindromo);
+    console.log(reverso);
+
+    ehPalindromo(arrayPalindromo, reverso);
+} else {
+    
+    for (let i = 0; i < arrayPalindromo.length; i++) {
+        newArrayPalindromo.push(arrayPalindromo.charAt(i));
+    }
+
+    reverso = newArrayPalindromo.toReversed();
+
+    console.log(newArrayPalindromo)
+    console.log(reverso)
+
+    ehPalindromo(newArrayPalindromo, reverso);
+}
+
+
+// Exercicio 12
+let arrayInter1 = [1, 2,]
+
+// 11. Palíndromo: Crie uma função que recebe um array de caracteres (ou uma string) e retorna se ele representa um palíndromo ou não.
+// 12. Intercalador: Crie uma função que recebe dois arrays de mesmo tamanho e retorna um novo array intercalando os elementos de ambos. Por exemplo: ‘([1,2,3], [’a’,’b’,’c’])‘ deve retornar ‘[1,’a’,2,’b’,3,’c’]‘.
+// 13. Compactador: Crie uma função que recebe um array de caracteres e retorna um novo ar-ray onde sequências consecutivas de elementos repetidos são substituídas por apenas uma ocorrência. Por exemplo: ‘[’a’,’a’,’b’,’b’,’b’,’c’,’a’,’a’]‘ deve retornar ‘[’a’,’b’,’c’,’a’]‘.
