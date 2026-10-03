@@ -211,8 +211,39 @@ if (Array.isArray(arrayPalindromo)){
 
 
 // Exercicio 12
-let arrayInter1 = [1, 2,]
+let arrayInter1 = [1, 2, 3];
+let arrayInter2 = ["a", "b", "c"];
 
-// 11. Palíndromo: Crie uma função que recebe um array de caracteres (ou uma string) e retorna se ele representa um palíndromo ou não.
-// 12. Intercalador: Crie uma função que recebe dois arrays de mesmo tamanho e retorna um novo array intercalando os elementos de ambos. Por exemplo: ‘([1,2,3], [’a’,’b’,’c’])‘ deve retornar ‘[1,’a’,2,’b’,3,’c’]‘.
-// 13. Compactador: Crie uma função que recebe um array de caracteres e retorna um novo ar-ray onde sequências consecutivas de elementos repetidos são substituídas por apenas uma ocorrência. Por exemplo: ‘[’a’,’a’,’b’,’b’,’b’,’c’,’a’,’a’]‘ deve retornar ‘[’a’,’b’,’c’,’a’]‘.
+function intercalador(array1, array2){
+    let arrayIntercalado = [];
+    for (let i of array1){
+        arrayIntercalado.push(array1[i-1])
+        arrayIntercalado.push(array2[i-1])
+    }
+    return arrayIntercalado;
+}
+
+let newArray = intercalador(arrayInter1, arrayInter2);
+
+console.log(newArray);
+
+// Exercicio 13
+let arrayOriginal = ['a', 'a', 'b', 'b', 'b', 'c', 'a', 'a'];
+
+function compactador(array) {
+    let arrayCompactado = [];
+    
+    for (let elemento of array) {
+        let ultimoAdicionado = arrayCompactado[arrayCompactado.length - 1];
+        
+        if (elemento !== ultimoAdicionado) {
+            arrayCompactado.push(elemento);
+        }
+    }
+    
+    return arrayCompactado;
+}
+
+let newArrayComp = compactador(arrayOriginal);
+
+console.log(newArrayComp);
